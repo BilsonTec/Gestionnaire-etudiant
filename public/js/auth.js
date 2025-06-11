@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { firebaseConfig } from './firebase-config.js';
+import { firebaseConfig } from './config-firebase.js';
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
   getAuth,
