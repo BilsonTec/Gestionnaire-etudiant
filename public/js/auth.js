@@ -1,4 +1,5 @@
 // @ts-nocheck
+import { firebaseConfig } from "./config-firebase.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
 import {
   getAuth,
@@ -9,14 +10,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
 import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBpZ3oStbE5JLPyEn1UGoEKqA7CZNOryKs",
-  authDomain: "gestion-etudiant-dd435.firebaseapp.com",
-  projectId: "gestion-etudiant-dd435",
-  storageBucket: "gestion-etudiant-dd435.firebasestorage.app",
-  messagingSenderId: "920758741185",
-  appId: "1:920758741185:web:b7e6a0085d53eeebc54c40"
-};
+
 
 // Initialisation de Firebase
 const app = initializeApp(firebaseConfig);
