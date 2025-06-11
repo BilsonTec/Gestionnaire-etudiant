@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Professeur - Gestionnaire d'Étudiants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Notification container -->
+    <div id="notification-container"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar-dashboard">
+        <div class="logo">Gestionnaire d'Étudiants</div>
+        <div class="user-info">
+            <span id="user-name">Chargement...</span>
+            <button class="logout-btn-dashboard" id="logout-btn">Déconnexion</button>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+        <section class="welcome-section" data-aos="fade-up">
+            <h1>Bienvenue, <span id="welcome-name">Professeur</span> !</h1>
+            <p>Email : <span id="user-email">Chargement...</span></p>
+            <p>Rôle : <span id="user-role">Professeur</span></p>
+            <p>Dernière connexion : <span id="last-login">Chargement...</span></p>
+        </section>
+
+        <div class="dashboard-grid">
+            <!-- Gérer les cours -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h2>Gérer les Cours</h2>
+                <form id="course-form" class="course-form">
+                    <div class="form-group">
+                        <label for="course-name">Nom du cours</label>
+                        <input type="text" id="course-name" name="name" required placeholder="Ex. Mathématiques">
+                    </div>
+                    <div class="form-group">
+                        <label for="course-description">Description</label>
+                        <textarea id="course-description" name="description" placeholder="Description du cours"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Ajouter le cours</button>
+                </form>
+                <h3>Mes cours</h3>
+                <ul id="course-list" class="course-list"></ul>
+            </div>
+
+            <!-- Emploi du temps -->
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <h2>Mon Emploi du Temps</h2>
+                <form id="schedule-form" class="schedule-form">
+                    <div class="form-group">
+                        <label for="schedule-course">Cours</label>
+                        <select id="schedule-course" name="courseId" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule-datetime">Date et heure</label>
+                        <input type="datetime-local" id="schedule-datetime" name="dateTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule-duration">Durée (minutes)</label>
+                        <input type="number" id="schedule-duration" name="duration" required placeholder="Ex. 120">
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule-location">Lieu</label>
+                        <input type="text" id="schedule-location" name="location" placeholder="Ex. Salle A1">
+                    </div>
+                    <button type="submit" class="btn-submit">Ajouter le créneau</button>
+                </form>
+                <h3>Mes créneaux</h3>
+                <ul id="schedule-list" class="schedule-list"></ul>
+            </div>
+
+            <!-- Attribuer des notes -->
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <h2>Attribuer des Notes</h2>
+                <form id="note-form" class="note-form">
+                    <div class="form-group">
+                        <label for="note-course">Cours</label>
+                        <select id="note-course" name="courseId" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="note-student">Étudiant</label>
+                        <select id="note-student" name="etudiantId" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="note-value">Note (0-20)</label>
+                        <input type="number" id="note-value" name="note" required min="0" max="20" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label for="note-comment">Commentaire</label>
+                        <textarea id="note-comment" name="commentaire" placeholder="Commentaire sur la note"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Attribuer la note</button>
+                </form>
+                <h3>Notes attribuées</h3>
+                <ul id="note-list" class="note-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+    <!-- Scripts -->
+    <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Fichiers Firebase sensibles
+js/firebase-config.js
+
+# Fichiers temporaires
+*.log
+*.cache
+*.tmp
+
+# Dossiers inutiles
+node_modules/
+.firebase/

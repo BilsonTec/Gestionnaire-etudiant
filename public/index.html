@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire d'Étudiants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" data-aos="fade-down">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Gestion<span>Étudiants</span></span>
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li data-aos="fade-down" data-aos-delay="100">
+                        <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="dropdown" data-aos="fade-down" data-aos-delay="150">
+                        <a href="html/about.html"><i class="fas fa-info-circle"></i> À propos</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="200">
+                        <a href="html/contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="250">
+                        <a href="html/inscription.html" class="btn-login">
+                            <i class="fas fa-sign-in-alt"></i> Connexion
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger" data-aos="fade-down">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal-->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" data-aos="fade-up">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Votre Portail Étudiant <span>Intuitif</span></h1>
+                    <p>Accédez à vos notes, emploi du temps et ressources pédagogiques en un clic</p>
+                    <div class="hero-buttons">
+                        <a href="html/inscription.html" class="btn-primary">Créer un compte</a>
+                        <a href="html/about.html" class="btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/hero-student.jpg" alt="Étudiant heureux" width="500">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 data-aos="fade-up">Nos <span>Fonctionnalités</span></h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Suivi des Notes</h3>
+                        <p>Visualisez vos résultats académiques en temps réel avec des graphiques clairs.</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Emploi du Temps</h3>
+                        <p>Consultez votre planning hebdomadaire avec notifications des changements.</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Ressources Pédagogiques</h3>
+                        <p>Accédez à tous vos cours et documents en ligne, disponibles 24h/24.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 data-aos="fade-up">Ce qu'ils <span>disent de nous</span></h2>
+                <div class="testimonials-slider" data-aos="fade-up">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Cette plateforme a simplifié ma vie étudiante. Tout est accessible en quelques clics !"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/images/student1.jpg" alt="Étudiant">
+                            <h4>Rose M.</h4>
+                            <span>Licence Informatique</span>
+                        </div>
+                    </div>
+                    <!-- Plus de témoignages ici -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Un outil indispensable pour suivre mes notes et mon emploi du temps. Je recommande !"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/images/student2.jpg" alt="Étudiant">
+                            <h4>Jean D.</h4>
+                            <span>Master Marketing</span>
+                        </div> 
+                        <!-- Plus de témoignages ici -->
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" data-aos="fade-up">
+                    <h3>GestionÉtudiants</h3>
+                    <p>La plateforme de gestion académique tout-en-un pour les étudiants et enseignants.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="html/about.html">À propos</a></li>
+                        <li><a href="html/contact.html">Contact</a></li>
+                        <li><a href="html/inscription.html">Connexion</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Ressources</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Guide d'utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Newsletter</h3>
+                    <p>Abonnez-vous pour recevoir les dernières actualités.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom" data-aos="fade-up">
+                <p>&copy; 2023 Gestionnaire d'Étudiants. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Firebase SDK 11.8.1 -->
+  <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js"></script>
+
+  <script type="module" src="js/auth.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

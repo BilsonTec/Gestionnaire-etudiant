@@ -1,0 +1,42 @@
+/* Importations des fichiers CSS */
+@import url("sections/header.css");
+@import url("sections/accueil.css");
+@import url("sections/contact.css");
+@import url("sections/about.css");
+@import url("sections/form.css");
+@import url("sections/admin.css");
+@import url("sections/etudiant.css");
+@import url("sections/footer.css");
+@import url("sections/global.css");
+@import url("sections/responsive.css");
+
+
+
+
+
+
+:root {
+    /* Palette de couleurs */
+    --color-primary: #800020;     /* Bordeaux */
+    --color-secondary: #F5F5F5;   /* Gris très clair */
+    --color-white: #FFFFFF;
+    --color-dark: #1C1C1C;        /* Texte principal */
+    --color-accent: #B22222;      /* Rouge clair */
+    --color-success: #4CAF50;
+    --color-warning: #FFA500;
+    --color-error: #FF4C4C;
+    --color-danger: #f44336;
+
+    /* Espacements */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    /* Typographie */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Étudiant - Gestionnaire d'Étudiants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Notification container -->
+    <div id="notification-container"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar-dashboard">
+        <div class="logo">Gestionnaire d'Étudiants</div>
+        <div class="user-info">
+            <span id="user-name">Chargement...</span>
+            <button class="logout-btn-dashboard" id="logout-btn">Déconnexion</button>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+        <section class="welcome-section" data-aos="fade-up">
+            <h1>Bienvenue, <span id="welcome-name">Étudiant</span> !</h1>
+            <p>Email : <span id="user-email">Chargement...</span></p>
+            <p>Rôle : <span id="user-role">Étudiant</span></p>
+            <p>Dernière connexion : <span id="last-login">Chargement...</span></p>
+        </section>
+
+        <div class="dashboard-grid">
+            <!-- Mes cours -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h2>Mes Cours</h2>
+                <h3>Cours inscrits</h3>
+                <ul id="enrolled-course-list" class="course-list"></ul>
+                <h3>Cours disponibles</h3>
+                <ul id="available-course-list" class="course-list"></ul>
+            </div>
+
+            <!-- Emploi du temps -->
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <h2>Mon Emploi du Temps</h2>
+                <ul id="schedule-list" class="schedule-list"></ul>
+            </div>
+
+            <!-- Mes notes -->
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <h2>Mes Notes</h2>
+                <ul id="note-list" class="note-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+    <!-- Scripts -->
+    <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/etudiant.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
