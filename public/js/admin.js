@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { auth, db } from './auth.js';
-import { onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
-import { doc, getDoc, setDoc, collection, addDoc, onSnapshot, deleteDoc, updateDoc, getDocs } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+import { onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js';
+import { doc, getDoc, setDoc, collection, addDoc, onSnapshot, deleteDoc, updateDoc, getDocs } from 'https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js';
 
 // Variable pour suivre l'état de déconnexion
 let isLoggingOut = false;
