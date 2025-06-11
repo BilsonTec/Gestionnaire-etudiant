@@ -1,5 +1,5 @@
 # Fichiers Firebase sensibles
-js/firebase-config.js
+public/js/config-firebase.js
 
 # Fichiers temporaires
 *.log
