@@ -11,6 +11,19 @@ import {
 import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
 
 
+   // Enregistrer le service worker
+   if ('serviceWorker' in navigator) {
+       window.addEventListener('load', () => {
+           navigator.serviceWorker.register('/sw.js')
+               .then((registration) => {
+                   console.log('Service Worker enregistré:', registration);
+               })
+               .catch((error) => {
+                   console.error('Erreur lors de l’enregistrement du Service Worker:', error);
+               });
+       });
+   }
+
 
 // Initialisation de Firebase
 const app = initializeApp(firebaseConfig);
